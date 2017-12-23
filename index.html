@@ -1,0 +1,30 @@
+	<!DOCTYPE html>
+	<html >
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+	</head>
+
+	<body>
+		<h1 id="header">Time Picker</h1>
+		<div class="time-cont">
+			<select class="h-time"></select>
+			<select class="m-time"></select>
+			<select class="p-time"></select>
+		</div>
+		<script src="js/timePicker.js" type="text/javascript"></script>
+
+		<script>
+			let elem1 = document.querySelectorAll('.h-time');
+			let elem2 = document.querySelectorAll('.m-time');
+			let elem3 = document.querySelectorAll('.p-time');
+			// Passing a default value of 5 for the range
+  			timePicker(elem1, elem2, 5,elem3);
+</script>
+
+</body>
+</html>
